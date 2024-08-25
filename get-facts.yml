@@ -1,0 +1,9 @@
+---
+- name: Get hostname information from target hosts
+  hosts: all  # 対象ホストのグループを指定
+  gather_facts: yes  # setupモジュールを使用してファクトを収集
+
+  tasks:
+    - name: Print the hostname of the target host
+      debug:
+        msg: "The hostname is {{ ansible_hostname }}"
