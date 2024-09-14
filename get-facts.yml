@@ -6,4 +6,4 @@
   tasks:
     - name: Print the hostname of the target host
       debug:
-        msg: "The hostname is {{ ansible_host }}"
+        msg: "The hostname is {{ ansible_hostname }}"
